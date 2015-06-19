@@ -1,11 +1,11 @@
-#include<iostream.h>
+#include<iostream>
 #include<conio.h>
-void main()
+using namespace std;
+int main()
 {
      int a[100];
      int i,n,x,y;
      int search(int *,int,int);
-     clrscr();
 
      cout<<"How many elements(not more than 100)=";
      cin>>n;
@@ -21,8 +21,6 @@ void main()
 
      if(y==0) cout<<x<<" is not present\n";
      else cout<<x<<" is present "<<y<<" times\n";
-
-     getch();
 }
 int search(int *p,int n,int x)
 {
